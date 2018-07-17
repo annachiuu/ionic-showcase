@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+      <p class="header-title">Designer</p>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div *ngFor="let designer of designers">
+  <div (tap)="toDesignerProfile(designer)">
+    <img src="./assets/imgs/designer-1.jpg">
+    <p>Jasmine Gruner</p>
+    <p>Developer of the 21st Century</p>
+  </div>
+</div>
+
+</ion-content>
